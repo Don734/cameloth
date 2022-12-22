@@ -1,6 +1,11 @@
 //BASE
 @import './includes/base/_fonts';
 @import './includes/base/_vars';
+@import './includes/base/_mixins';
 @import './includes/base/_default';
 
-// MODULES
+// LAYOUTS
+@import './includes/layouts/header.scss';
+@import './includes/layouts/banner.scss';
+@import './includes/layouts/about.scss';
+@import './includes/layouts/footer.scss';

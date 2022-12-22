@@ -1,0 +1,11 @@
+@mixin standart-font-style {
+    font-size: 17px;
+    color: $color-3;
+    letter-spacing: .36px;
+}
+
+@mixin section-title {
+    font-family: 'Mulish', serif;
+    font-size: 45px;
+    font-weight: 400;
+}

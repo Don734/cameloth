@@ -27,10 +27,10 @@
     font-family: 'Mulish';
     src: url('./fonts/Mulish/Mulish-Regular.eot');
     src: local('Mulish Regular'), local('Mulish-Regular'),
-        url('/fonts/Mulish/Mulish-Regular.eot?#iefix') format('embedded-opentype'),
-        url('/fonts/Mulish/Mulish-Regular.woff2') format('woff2'),
-        url('/fonts/Mulish/Mulish-Regular.woff') format('woff'),
-        url('/fonts/Mulish/Mulish-Regular.ttf') format('truetype');
+        url('./fonts/Mulish/Mulish-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Mulish/Mulish-Regular.woff2') format('woff2'),
+        url('./fonts/Mulish/Mulish-Regular.woff') format('woff'),
+        url('./fonts/Mulish/Mulish-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
