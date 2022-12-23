@@ -65,6 +65,17 @@ ul {
   font-weight: 400;
 }
 
+.section-header .section-title {
+  font-family: "Mulish", serif;
+  font-size: 45px;
+  font-weight: 400;
+}
+.section-header .section-description {
+  font-size: 17px;
+  color: #1C2752;
+  letter-spacing: 0.36px;
+}
+
 .header .top-bar {
   display: flex;
   align-items: center;
@@ -332,6 +343,23 @@ ul {
 }
 .about .content .card .card-body .items-list p:last-of-type {
   margin-bottom: 0;
+}
+
+.services {
+  padding-top: 240px;
+  padding-bottom: 140px;
+  background-color: #F4F4F4;
+}
+.services .section-header {
+  text-align: center;
+}
+.services .section-header .badge {
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+.services .section-header .section-title {
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .footer {

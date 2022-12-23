@@ -1,0 +1,19 @@
+.services {
+    padding-top: 240px;
+    padding-bottom: 140px;
+    background-color: $color-9;
+
+    .section-header {
+        text-align: center;
+
+        .badge {
+            margin: 0 auto;
+            background-color: $color-1;
+        }
+
+        .section-title {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+    }
+}

@@ -43,3 +43,13 @@ ul {
         font-weight: 400;
     }
 }
+
+.section-header {
+    .section-title {
+        @include section-title;
+    }
+
+    .section-description {
+        @include standart-font-style;
+    }
+}
