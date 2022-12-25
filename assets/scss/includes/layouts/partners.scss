@@ -1,0 +1,20 @@
+.partners {
+    padding-top: 60px;
+    padding-bottom: 140px;
+
+    .section-header {
+        .badge {
+            margin: 0 auto;
+            background-color: $color-9;
+        }
+
+        .section-title {
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+    }
+
+    .swiper-slide {
+        text-align: center;
+    }
+}
