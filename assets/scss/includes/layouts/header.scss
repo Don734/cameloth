@@ -1,4 +1,4 @@
-.header {
+.header, .top-secondary {
     .top-bar {
         display: flex;
         align-items: center;
@@ -63,7 +63,7 @@
             }
 
             .content {
-                display: flex;
+                display: none;
                 flex-direction: column;
                 margin-left: 10px;
                 @include standart-font-style;
@@ -92,10 +92,24 @@
             }
 
             .nav {
-                height: 100%;
+                position: absolute;
+                max-width: 400px;
+                margin: 0 auto;
+                top: 88px;
+                left: 50%;
+                width: 100%;
+                height: 0;
+                justify-content: center;
+                background: $color-6;
+                transform: translateX(-50%);
+                visibility: hidden;
+                opacity: 0;
+                transition: .3s ease;
 
                 .nav-list {
                     display: flex;
+                    flex-direction: column;
+                    width: 100%;
                     height: 100%;
 
                     .nav-item {
@@ -116,6 +130,12 @@
                             }
                         }
                     }
+                }
+
+                &.show {
+                    height: max-content;
+                    visibility: visible;
+                    opacity: 1;
                 }
             }
 
@@ -138,5 +158,18 @@
                 }
             }
         }
+    }
+}
+
+.top-secondary {
+    position: fixed;
+    top: -100%;
+    width: 100%;
+    background-color: $color-1;
+    z-index: 1000;
+    transition: .7s ease;
+
+    &.fixed {
+        top: 0;
     }
 }

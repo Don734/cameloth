@@ -2,6 +2,8 @@ document.addEventListener('DOMContentLoaded', function () {
     partnersSwiper();
     gallerySwiper();
     customersSwiper();
+    formSetMask();
+    fixNavbar();
 })
 
 function partnersSwiper() {
@@ -54,4 +56,20 @@ function customersSwiper() {
         },
     };
     const swiper = new Swiper(swiperContainer, swiperOptions);
+}
+
+function fixNavbar() {
+    const header = document.querySelector('.header').offsetHeight;
+    const top_secondary = document.querySelector('.top-secondary');
+    document.addEventListener('scroll', function (e) {
+        if (window.pageYOffset >= header) {
+            top_secondary.classList.add('fixed');
+        } else {
+            top_secondary.classList.remove('fixed');
+        }
+    })
+}
+
+function formSetMask() {
+    $('input[name=date]').mask('00/00/0000');
 }

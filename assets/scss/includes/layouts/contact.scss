@@ -84,6 +84,64 @@
         }
     }
 
+    .contact-form {
+        padding: 70px 40px 75px 40px;
+        background-color: $color-9;
+        
+        .form-control, button[type=submit] {
+            height: 65px;
+            border-radius: 0;
+        }
+
+        .form-control {
+            padding-left: 45px;
+            margin-bottom: 25px;
+            border: 1px solid #cccccc;
+
+            &::placeholder {
+                @include standart-font-style(17px, $color-3);
+            }
+        }
+
+        button[type=submit] {
+            position: relative;
+            margin-top: 30px;
+            font-size: 17px;
+            font-weight: bold;
+            color: $color-1;
+            background-color: $color-6;
+            overflow: hidden;
+
+            span {
+                position: relative;
+                z-index: 1;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: auto;
+                width: 0;
+                background-color: $color-1;
+                transition: .3s ease;
+            }
+
+            &:hover {
+                border: none;
+                
+                &::before {
+                    width: 100%;
+                    right: auto;
+                    left: 0;
+                    background-color: $color-3;
+                }
+            }
+        }
+    }
+
     .swiper-button-wrap {
         position: absolute;
         left: 40px;

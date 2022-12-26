@@ -1,0 +1,34 @@
+@media screen and (min-width: 768px) {
+    .header, .top-secondary {
+        .bottom-bar {
+            .icon-col {
+                .content {
+                    display: flex;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .header, .top-secondary {
+        .bottom-bar {
+            .nav-wrap {
+                .nav {
+                    position: static;
+                    height: 100%;
+                    transform: unset;
+
+                    .nav-list {
+                        flex-direction: row;
+                        width: max-content;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    
+}
