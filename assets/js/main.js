@@ -106,15 +106,14 @@ function setCounter() {
 
 function menuToggle() {
     const button = $('.burger');
-    const menu = $('.header__nav');
 
     button.on('click', (e) => {
-        if ($(e.target).hasClass('active') && menu.hasClass('show')) {
+        if (!$(e.target).hasClass('active') && !menu.hasClass('show')) {
             $(e.target).addClass('active');
-            menu.addClass('show')
+            $(e.target).closest('.nav-wrap').find('.header_nav').addClass('show');
         } else {
             $(e.target).removeClass('active');
-            menu.removeClass('show')
+            $(e.target).closest('.nav-wrap').find('.header_nav').removeClass('show');
         }
     })
 }
