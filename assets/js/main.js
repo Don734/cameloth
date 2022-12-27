@@ -108,12 +108,14 @@ function menuToggle() {
     const button = $('.burger');
 
     button.on('click', (e) => {
+        let menu = $(e.target).closest('.nav-wrap').find('.header__nav');
+        console.log(menu);
         if (!$(e.target).hasClass('active') && !menu.hasClass('show')) {
             $(e.target).addClass('active');
-            $(e.target).closest('.nav-wrap').find('.header_nav').addClass('show');
+            menu.addClass('show');
         } else {
             $(e.target).removeClass('active');
-            $(e.target).closest('.nav-wrap').find('.header_nav').removeClass('show');
+            menu.removeClass('show');
         }
     })
 }
