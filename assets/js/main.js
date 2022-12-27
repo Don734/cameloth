@@ -109,8 +109,13 @@ function menuToggle() {
     const menu = $('.header__nav');
 
     button.on('click', (e) => {
-        $(e.target).toggleClass('active');
-        menu.toggleClass('show')
+        if ($(e.target).hasClass('active') && menu.hasClass('show')) {
+            $(e.target).addClass('active');
+            menu.addClass('show')
+        } else {
+            $(e.target).removeClass('active');
+            menu.removeClass('show')
+        }
     })
 }
 
