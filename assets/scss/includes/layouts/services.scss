@@ -12,6 +12,7 @@
         }
 
         .section-title {
+            @include section-title(35px);
             margin-top: 20px;
             margin-bottom: 10px;
         }

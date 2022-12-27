@@ -28,6 +28,7 @@ ul {
 
 .badge {
     display: flex;
+    align-items: center;
     width: max-content;
     @include standart-font-style;
     background-color: rgba($color: $color-9, $alpha: .3);
@@ -39,7 +40,7 @@ ul {
 
     .text {
         margin-left: 10px;
-        font-size: 18px;
+        font-size: 17px;
         font-weight: 400;
         color: $color-3 !important;
     }

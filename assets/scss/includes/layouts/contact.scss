@@ -11,11 +11,13 @@
         .section-title {
             margin-top: 20px;
             margin-bottom: 40px;
+            @include section-title(35px);
         }
     }
 
     .customer-card {
         padding: 40px 40px 60px 40px;
+        margin-bottom: 30px;
         border: 1px solid #dddddd;
         border-radius: 0;
 
@@ -85,7 +87,7 @@
     }
 
     .contact-form {
-        padding: 70px 40px 75px 40px;
+        padding: 70px 20px 75px 20px;
         background-color: $color-9;
         
         .form-control, button[type=submit] {

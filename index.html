@@ -39,12 +39,12 @@
             <div class="bottom-bar">
                 <div class="container">
                     <div class="row justify-content-between align-items-center">
-                        <div class="col-md-3">
+                        <div class="col-6 col-md-3">
                             <a href="#" class="logo-link"><img src="./assets/img/logo.png" alt=""></a>
                         </div>
-                        <div class="col-md-9">
+                        <div class="col-6 col-md-9">
                             <div class="row justify-content-end">
-                                <div class="col-6 col-lg-5 icon-col">
+                                <div class="col-4 col-md-6 col-lg-5 icon-col">
                                     <a href="#" class="link"></a>
                                     <span class="icon"><i class="fa-regular fa-envelope"></i></span>
                                     <div class="content">
@@ -52,7 +52,7 @@
                                         <small>arthur@camelothgroup.com</small>
                                     </div>
                                 </div>
-                                <div class="col-5 col-lg-4 icon-col">
+                                <div class="col-4 col-md-6 col-lg-4 icon-col">
                                     <a href="#" class="link"></a>
                                     <span class="icon"><i class="fa-regular fa-phone"></i></span>
                                     <div class="content">
@@ -67,25 +67,34 @@
                 <div class="container p-0">
                     <div class="nav-wrap">
                         <div class="row justify-content-between align-items-center">
-                            <div class="col-md-6 h-100">
+                            <div class="col-4 col-md-8 h-100">
+                                <button class="burger">
+                                    <span></span>
+                                </button>
                                 <nav class="nav header__nav">
                                     <ul class="nav-list">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">About Us</a>
+                                            <a class="nav-link" href="#about">About Us</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">Projects</a>
+                                            <a class="nav-link" href="#offers">Offers</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">News</a>
+                                            <a class="nav-link" href="#services">Offers</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">Contact us</a>
+                                            <a class="nav-link" href="#projects">Projects</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#contact">Contact us</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#partners">Partners</a>
                                         </li>
                                     </ul>
                                 </nav>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-8 col-md-3">
                                 <a href="#" class="link questions">Have Any Questions?</a>
                             </div>
                         </div>
@@ -109,7 +118,7 @@
                     </div>
                 </div>
             </section>
-            <section class="about">
+            <section class="about" id="about">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6">
@@ -129,7 +138,7 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="counter">
-                                            <span>35</span>
+                                            <span id="about_count" data-count="35">0</span>
                                             <small>Years Of<br/>Experience</small>
                                         </div>
                                         <div class="items-list">
@@ -146,7 +155,7 @@
                     </div>
                 </div>
             </section>
-            <section class="offers">
+            <section class="offers" id="offers">
                 <div class="container">
                     <div class="section-header">
                         <div class="badge">
@@ -156,28 +165,28 @@
                         <p class="section-title">Professional Main Services</p>
                         <p class="section-description">We have extensive experience of domestic and business electrical installations and no job is<br/>too small. Our customers value our professionalism, work ethic and our competitive prices.</p>
                     </div>
-                    <ul class="nav nav-pills ml-auto">
+                    <ul class="nav nav-pills ml-auto" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#commercial" data-toggle="tab">
+                            <a class="nav-link active" href="#commercial" data-bs-toggle="tab" data-bs-target="#commercial">
                                 <span class="icon"><i class="fa-solid fa-gear"></i></span>
                                 <span class="text">Commerical</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#residential" data-toggle="tab">
+                            <a class="nav-link" href="#residential" data-bs-toggle="tab" data-bs-target="#residential">
                                 <span class="icon"><i class="fa-solid fa-gear"></i></span>
                                 <span class="text">Residential</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#industrial" data-toggle="tab">
+                            <a class="nav-link" href="#industrial" data-bs-toggle="tab" data-bs-target="#industrial">
                                 <span class="icon"><i class="fa-solid fa-gear"></i></span>
                                 <span class="text">Industrial</span>
                             </a>
                         </li>
                     </ul>
                     <div class="tab-content">
-                        <div class="tab-pane active" id="commercial">
+                        <div class="tab-pane fade show active" id="commercial" role="tabpanel" aria-labelledby="commercial">
                             <div class="row">
                                 <div class="col-lg-7">
                                     <div class="badge">
@@ -194,7 +203,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane" id="residential">
+                        <div class="tab-pane fade" id="residential" role="tabpanel" aria-labelledby="residential">
                             <div class="row">
                                 <div class="col-lg-7">
                                     <div class="badge">
@@ -211,7 +220,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane" id="industrial">
+                        <div class="tab-pane fade" id="industrial" role="tabpanel" aria-labelledby="industrial">
                             <div class="row">
                                 <div class="col-lg-7">
                                     <div class="badge">
@@ -231,7 +240,7 @@
                     </div>
                 </div>
             </section>
-            <section class="services">
+            <section class="services" id="services">
                 <div class="container">
                     <div class="section-header">
                         <div class="badge">
@@ -242,7 +251,7 @@
                         <p class="section-description">We offers a comprehensive range of electrical services for domestic and commercial<br/>properties at a reasonable price.</p>
                     </div>
                     <div class="row">
-                        <div class="col col-md-6 col-lg-3">
+                        <div class="col col-12 col-md-6 col-lg-3">
                             <div class="card">
                                 <div class="card-body">
                                     <span class="icon"><i class="fa-solid fa-gear"></i></span>
@@ -252,7 +261,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col col-md-6 col-lg-3">
+                        <div class="col col-12 col-md-6 col-lg-3">
                             <div class="card">
                                 <div class="card-body">
                                     <span class="icon"><i class="fa-solid fa-gear"></i></span>
@@ -262,7 +271,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col col-md-6 col-lg-3">
+                        <div class="col col-12 col-md-6 col-lg-3">
                             <div class="card">
                                 <div class="card-body">
                                     <span class="icon"><i class="fa-solid fa-gear"></i></span>
@@ -272,7 +281,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col col-md-6 col-lg-3">
+                        <div class="col col-12 col-md-6 col-lg-3">
                             <div class="card">
                                 <div class="card-body">
                                     <span class="icon"><i class="fa-solid fa-gear"></i></span>
@@ -282,7 +291,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col col-lg-3">
+                        <div class="col col-12 col-lg-3">
                             <div class="card">
                                 <div class="card-body">
                                     <span class="icon"><i class="fa-solid fa-gear"></i></span>
@@ -292,7 +301,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col col-lg-3">
+                        <div class="col col-12 col-lg-3">
                             <div class="card">
                                 <div class="card-body">
                                     <span class="icon"><i class="fa-solid fa-gear"></i></span>
@@ -314,19 +323,19 @@
                             </div>
                             <div class="counters">
                                 <div class="adv-count">
-                                    <span class="counter">3956</span>
+                                    <span class="counter" id="adv_count1" data-count="3956">0</span>
                                     <p class="counter-title">Project Done</p>
                                 </div>
                                 <div class="adv-count">
-                                    <span class="counter">854</span>
+                                    <span class="counter" id="adv_count2" data-count="854">0</span>
                                     <p class="counter-title">People Working</p>
                                 </div>
                                 <div class="adv-count">
-                                    <span class="counter">265</span>
+                                    <span class="counter" id="adv_count3" data-count="265">0</span>
                                     <p class="counter-title">Business Partners</p>
                                 </div>
                                 <div class="adv-count">
-                                    <span class="counter">845+</span>
+                                    <span class="counter" id="adv_count4" data-count="845">0</span>
                                     <p class="counter-title">Happy Customers</p>
                                 </div>
                             </div>
@@ -358,7 +367,7 @@
                     </div>
                 </div>
             </section>
-            <section class="projects">
+            <section class="projects" id="projects">
                 <div class="container">
                     <div class="section-header">
                         <div class="badge">
@@ -417,7 +426,7 @@
                     </div>
                 </div>
             </section>
-            <section class="contact">
+            <section class="contact" id="contact">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6">
@@ -508,7 +517,7 @@
                     </div>
                 </div>
             </section>
-            <section class="partners">
+            <section class="partners" id="partners">
                 <div class="container">
                     <div class="section-header">
                         <div class="badge">
@@ -561,11 +570,11 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer__top">
-                    <div class="row">
-                        <div class="col-md-2"><a href="#" class="logo-link"><img src="./assets/img/footer-logo.png" alt=""></a></div>
-                        <div class="col-md-10">
+                    <div class="row align-items-center">
+                        <div class="col-6 col-md-2"><a href="#" class="logo-link"><img src="./assets/img/footer-logo.png" alt=""></a></div>
+                        <div class="col-6 col-md-10">
                             <div class="row justify-content-end">
-                                <div class="col-md-4 icon-col">
+                                <div class="col-4 col-md-2 col-lg-4 icon-col">
                                     <a href="#" class="link"></a>
                                     <span class="icon"><i class="fa-regular fa-envelope"></i></span>
                                     <div class="content">
@@ -573,7 +582,7 @@
                                         <small>arthur@camelothgroup.com</small>
                                     </div>
                                 </div>
-                                <div class="col-md-3 icon-col">
+                                <div class="col-4 col-md-2 col-lg-3 icon-col">
                                     <a href="#" class="link"></a>
                                     <span class="icon"><i class="fa-regular fa-phone"></i></span>
                                     <div class="content">
@@ -581,7 +590,7 @@
                                         <small>+971 42 999 583</small>
                                     </div>
                                 </div>
-                                <div class="col-md-3 icon-col">
+                                <div class="col-4 col-md-2 col-lg-3 icon-col">
                                     <a href="#" class="link"></a>
                                     <span class="icon"><i class="fa-regular fa-location-dot"></i></span>
                                     <div class="content">
@@ -653,12 +662,12 @@
         <div class="bottom-bar">
             <div class="container">
                 <div class="row justify-content-between align-items-center">
-                    <div class="col-md-4">
+                    <div class="col-6 col-md-3">
                         <a href="#" class="logo-link"><img src="./assets/img/logo.png" alt=""></a>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-6 col-md-9">
                         <div class="row justify-content-end">
-                            <div class="col-md-5 icon-col">
+                            <div class="col-4 col-md-6 col-lg-5 icon-col">
                                 <a href="#" class="link"></a>
                                 <span class="icon"><i class="fa-regular fa-envelope"></i></span>
                                 <div class="content">
@@ -666,7 +675,7 @@
                                     <small>arthur@camelothgroup.com</small>
                                 </div>
                             </div>
-                            <div class="col-md-4 icon-col">
+                            <div class="col-4 col-md-6 col-lg-4 icon-col">
                                 <a href="#" class="link"></a>
                                 <span class="icon"><i class="fa-regular fa-phone"></i></span>
                                 <div class="content">
@@ -681,25 +690,34 @@
             <div class="container p-0">
                 <div class="nav-wrap">
                     <div class="row justify-content-between align-items-center">
-                        <div class="col-md-6 h-100">
+                        <div class="col-4 col-md-8 h-100">
+                            <button class="burger">
+                                <span></span>
+                            </button>
                             <nav class="nav header__nav">
                                 <ul class="nav-list">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">About Us</a>
+                                        <a class="nav-link" href="#about">About Us</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Projects</a>
+                                        <a class="nav-link" href="#offers">Offers</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">News</a>
+                                        <a class="nav-link" href="#services">Offers</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Contact us</a>
+                                        <a class="nav-link" href="#projects">Projects</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#contact">Contact us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#partners">Partners</a>
                                     </li>
                                 </ul>
                             </nav>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-8 col-md-3">
                             <a href="#" class="link questions">Have Any Questions?</a>
                         </div>
                     </div>
@@ -714,6 +732,6 @@
     <script src="./assets/vendors/fontawesome/js/pro.min.js"></script>
     <script src="./assets/vendors/jqmask/jquery.mask.min.js"></script>
     <script src="./assets/vendors/animejs/anime.min.js"></script>
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/main.js" type="module"></script>
 </body>
 </html>

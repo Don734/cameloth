@@ -1,9 +1,13 @@
+import { CountUp } from "../vendors/countup/countUp.min.js";
+
 document.addEventListener('DOMContentLoaded', function () {
     partnersSwiper();
     gallerySwiper();
     customersSwiper();
     formSetMask();
     fixNavbar();
+    setCounter();
+    menuToggle();
 })
 
 function partnersSwiper() {
@@ -67,6 +71,46 @@ function fixNavbar() {
         } else {
             top_secondary.classList.remove('fixed');
         }
+    })
+}
+
+function setCounter() {
+    const about_count = document.querySelector('#about_count');
+    const adv_counts = document.querySelectorAll('.adv-count .counter');
+
+    let options = {
+        enableScrollSpy: true
+    }; 
+
+    const aboutCounter = new CountUp('about_count', about_count.dataset.count, options);
+
+    adv_counts.forEach((elem, id, array) => {
+        if (id === array.length - 1) {
+            options['suffix'] = '+';
+        }
+        const adv_Counter = new CountUp(`${elem.id}`, elem.dataset.count, options);
+
+        if (!adv_Counter.error) {
+            adv_Counter.handleScroll();
+        } else {
+            console.error(adv_Counter.error);
+        }
+    });
+
+    if (!aboutCounter.error) {
+        aboutCounter.handleScroll();
+    } else {
+        console.error(aboutCounter.error);
+    }
+}
+
+function menuToggle() {
+    const button = $('.burger');
+    const menu = $('.header__nav');
+
+    button.on('click', (e) => {
+        $(e.target).toggleClass('active');
+        menu.toggleClass('show')
     })
 }
 

@@ -40,8 +40,8 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 68px;
-                height: 68px;
+                width: 48px;
+                height: 48px;
                 font-size: 24px;
                 color: $color-1;
                 background-color: $color-6;
@@ -51,7 +51,7 @@
             }
 
             .content {
-                display: flex;
+                display: none;
                 flex-direction: column;
                 margin-left: 10px;
                 @include standart-font-style;
