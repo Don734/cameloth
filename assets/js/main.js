@@ -109,7 +109,7 @@ function menuToggle() {
 
     button.on('click', (e) => {
         let menu = $(e.target).closest('.nav-wrap').find('.header__nav');
-        console.log(menu);
+        
         if (!$(e.target).hasClass('active') && !menu.hasClass('show')) {
             $(e.target).addClass('active');
             menu.addClass('show');
