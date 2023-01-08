@@ -17,5 +17,16 @@
 
     .swiper-slide {
         text-align: center;
+
+        .partner-link {
+            
+
+            img {
+                max-width: 180px;
+                width: 100%;
+                height: 60px;
+                object-fit: contain;
+            }
+        }
     }
 }

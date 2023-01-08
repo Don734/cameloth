@@ -75,14 +75,14 @@ function fixNavbar() {
 }
 
 function setCounter() {
-    const about_count = document.querySelector('#about_count');
+    // const about_count = document.querySelector('#about_count');
     const adv_counts = document.querySelectorAll('.adv-count .counter');
 
     let options = {
         enableScrollSpy: true
     }; 
 
-    const aboutCounter = new CountUp('about_count', about_count.dataset.count, options);
+    // const aboutCounter = new CountUp('about_count', about_count.dataset.count, options);
 
     adv_counts.forEach((elem, id, array) => {
         if (id === array.length - 1) {
@@ -97,11 +97,11 @@ function setCounter() {
         }
     });
 
-    if (!aboutCounter.error) {
-        aboutCounter.handleScroll();
-    } else {
-        console.error(aboutCounter.error);
-    }
+    // if (!aboutCounter.error) {
+    //     aboutCounter.handleScroll();
+    // } else {
+    //     console.error(aboutCounter.error);
+    // }
 }
 
 function menuToggle() {
