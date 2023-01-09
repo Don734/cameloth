@@ -1244,11 +1244,12 @@ ul {
     padding-left: 0;
     padding-right: 0;
   }
-
   .banner .content .banner-title {
     font-size: 60px;
   }
-
+  .banner .content .badge .text {
+    font-size: 18px;
+  }
   .about .content .title {
     font-family: "Mulish", serif;
     font-size: 45px;
@@ -1260,7 +1261,6 @@ ul {
     margin-left: 40px;
     margin-top: 0;
   }
-
   .offers .nav .nav-item {
     margin: 0 15px;
   }
@@ -1280,11 +1280,9 @@ ul {
     color: #1C2752;
     letter-spacing: 0.36px;
   }
-
   .projects .section-header .section-title, .offers .section-header .section-title {
     color: #ffffff !important;
   }
-
   .advantages .counters {
     padding: 125px 80px;
   }
@@ -1299,7 +1297,6 @@ ul {
     color: #1C2752;
     letter-spacing: 0.36px;
   }
-
   .offers .section-header .section-title, .services .section-header .section-title, .projects .section-header .section-title, .contact .section-header .section-title, .partners .section-header .section-title {
     font-family: "Mulish", serif;
     font-size: 45px;
@@ -1307,17 +1304,14 @@ ul {
     color: #1C2752;
     letter-spacing: 0.36px;
   }
-
   .contact .contact-form {
     padding: 70px 40px 75px 40px;
   }
-
   .footer .footer__top .icon-col .icon {
     max-width: 68px;
     width: 100%;
     height: 68px;
   }
-
   .badge .text {
     font-size: 18px;
   }
@@ -1339,7 +1333,6 @@ ul {
     flex-direction: row;
     width: max-content;
   }
-
   .about .img-block {
     max-width: 575px;
     margin-bottom: 0;
@@ -1347,24 +1340,19 @@ ul {
   .about .content .card .card-body {
     justify-content: flex-start;
   }
-
   .offers .tab-content .img-block {
     max-width: 415px;
     margin-top: 0;
   }
-
   .projects .row .card {
     margin: unset;
   }
-
   .contact .customer-card {
     margin-bottom: 0;
   }
-
   .subscribe .text {
     margin-bottom: 0;
   }
-
   .footer .footer__top .icon-col .content {
     display: flex;
   }

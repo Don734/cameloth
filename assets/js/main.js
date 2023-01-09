@@ -121,5 +121,10 @@ function menuToggle() {
 }
 
 function formSetMask() {
-    $('input[name=date]').mask('00/00/0000');
+    let date = new Date();
+    let day = ("0" + date.getDate()).slice(-2);
+    let month = ("0" + date.getMonth()+1).slice(-2);
+    let year = date.getFullYear();
+    let fullDate = day+'/'+month+'/'+year;
+    $('input[name=date]').val(fullDate).mask('00/00/0000');
 }
