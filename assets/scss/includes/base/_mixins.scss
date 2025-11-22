@@ -1,13 +1,11 @@
-@mixin standart-font-style ($fz: 17px, $color: $color-4 ) {
-    font-size: $fz;
-    color: $color;
-    letter-spacing: .36px;
-}
-
-@mixin section-title ($fz: 45px, $color: $color-3 ) {
-    font-family: 'Mulish', serif;
-    font-size: $fz;
-    font-weight: 400;
-    color: $color;
-    letter-spacing: .36px;
+@mixin opensans-font($type, $weight) {
+    $url: "./fonts/OpenSans/OpenSans-#{$type}";
+    @font-face {
+        font-family: 'Open Sans';
+        src: local('Open Sans #{type}'), local('OpenSans-#{type}'),
+            url('#{$url}.eot?#iefix') format('embedded-opentype'),
+            url('#{$url}.woff') format('woff'),
+            url('#{$url}.ttf') format('truetype');
+        font-weight: $weight;
+    }
 }
